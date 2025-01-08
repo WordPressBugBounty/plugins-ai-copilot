@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'quadlayers/ai-copilot',
-        'pretty_version' => 'v1.2.6',
-        'version' => '1.2.6.0',
-        'reference' => '538b1c238ec5d9fd69ec6291bd8e4282d85ae7eb',
+        'pretty_version' => 'v1.2.8',
+        'version' => '1.2.8.0',
+        'reference' => 'b752773b8e1af8228f4020a9261fb30ea31c4e49',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'automattic/jetpack-assets' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => 'efd597f5aee8d016ff806dad9b4de16862de1f95',
+            'reference' => '83d41071d541ec2f988b655d7b393f3f66cc3fce',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/automattic/jetpack-assets',
             'aliases' => array(
@@ -35,7 +35,7 @@
         'automattic/jetpack-constants' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => 'be0ae55de48b23725643639d7ae00ac4e72ddc06',
+            'reference' => '6617a5a7ea0768d4ef90743eb049c164341cf528',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/automattic/jetpack-constants',
             'aliases' => array(
@@ -46,7 +46,7 @@
         'deliciousbrains/wp-background-processing' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '212b8ea8147dba2390be1868cb7906ea38b1fa1c',
+            'reference' => '7ca7cc3504333db3a291bbab7f1917124fba4816',
             'type' => 'library',
             'install_path' => __DIR__ . '/../deliciousbrains/wp-background-processing',
             'aliases' => array(
@@ -119,9 +119,9 @@
             ),
         ),
         'quadlayers/ai-copilot' => array(
-            'pretty_version' => 'v1.2.6',
-            'version' => '1.2.6.0',
-            'reference' => '538b1c238ec5d9fd69ec6291bd8e4282d85ae7eb',
+            'pretty_version' => 'v1.2.8',
+            'version' => '1.2.8.0',
+            'reference' => 'b752773b8e1af8228f4020a9261fb30ea31c4e49',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -141,7 +141,7 @@
         'quadlayers/wp-notice-plugin-promote' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'b7e86c63dcc1cb6106b1b99e99a0e8f943d015c8',
+            'reference' => 'e947d41c606f1ab679518d87f2b51230a9d74c92',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/quadlayers/wp-notice-plugin-promote',
             'aliases' => array(
