@@ -5,7 +5,7 @@ Tags: ai, chatgpt, gpt, openai, chatbot
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 6.7
-Stable tag: 1.2.8
+Stable tag: 1.2.9
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -111,6 +111,9 @@ For transparency and legal compliance, review Pexels' policies:
 - Privacy Policy: [Pexels Privacy Policy](https://www.pexels.com/privacy-policy/)
 
 == Changelog ==
+
+= 1.2.9 =
+- fix: ui issues
 
 = 1.2.8 =
 - fix: ui issues

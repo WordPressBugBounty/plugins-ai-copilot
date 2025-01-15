@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'quadlayers/ai-copilot',
-        'pretty_version' => 'v1.2.8',
-        'version' => '1.2.8.0',
-        'reference' => 'b752773b8e1af8228f4020a9261fb30ea31c4e49',
+        'pretty_version' => 'v1.2.9',
+        'version' => '1.2.9.0',
+        'reference' => '8a050f552877cd2553067a129b387a2400abd48d',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -119,9 +119,9 @@
             ),
         ),
         'quadlayers/ai-copilot' => array(
-            'pretty_version' => 'v1.2.8',
-            'version' => '1.2.8.0',
-            'reference' => 'b752773b8e1af8228f4020a9261fb30ea31c4e49',
+            'pretty_version' => 'v1.2.9',
+            'version' => '1.2.9.0',
+            'reference' => '8a050f552877cd2553067a129b387a2400abd48d',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

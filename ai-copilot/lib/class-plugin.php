@@ -102,7 +102,7 @@ final class Plugin {
 									)
 								),
 								'<a href="https://beta.openai.com/account/api-keys" target="_blank">' . __( 'OpenAI', 'ai-copilot' ) . '</a>',
-								'<a href="' . esc_url( admin_url( 'admin.php?page=ai-copilot&tab=services' ) ) . '" target="_blank">' . __( 'API Keys', 'ai-copilot' ) . '</a>'
+								'<a href="' . esc_url( admin_url( 'admin.php?page=ai-copilot&tab=apikeys' ) ) . '" target="_blank">' . __( 'API Keys', 'ai-copilot' ) . '</a>'
 							);
 							?>
 						</p>

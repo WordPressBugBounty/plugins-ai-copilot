@@ -24,10 +24,6 @@ class Assistant_File extends CollectionEntity {
 		'file_description' => 'wp_kses_post',
 		'openai_id'        => 'sanitize_text_field',
 	);
-	// phpcs:ignore
-	public static $validateProperties = array(
-		'file_label' => 'strlen',
-	);
 
 	public function __construct() {
 		$this->file_date = gmdate( 'Y-m-d' );

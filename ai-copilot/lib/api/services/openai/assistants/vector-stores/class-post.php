@@ -21,7 +21,7 @@ class Post extends Base {
 
 			$vector_store = Models_Assistant_Vector_Stores::instance()->create(
 				array(
-					'vector_store_label'       => $response['file_label'] ?? $data['vector_store_label'],
+					'vector_store_label'       => $data['vector_store_label'],
 					'vector_store_description' => $data['vector_store_description'] ?? '',
 					'openai_id'                => $response['openai_id'] ?? '',
 					'vector_store_files_ids'   => $data['vector_store_files_ids'] ?? array(),

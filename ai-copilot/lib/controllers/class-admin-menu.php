@@ -74,10 +74,10 @@ class Admin_Menu {
 		);
 		add_submenu_page(
 			$menu_slug,
-			esc_html__( 'Services', 'ai-copilot' ),
-			esc_html__( 'Services', 'ai-copilot' ),
+			esc_html__( 'API Keys', 'ai-copilot' ),
+			esc_html__( 'API Keys', 'ai-copilot' ),
 			'manage_options',
-			"{$menu_slug}&tab=services",
+			"{$menu_slug}&tab=apikeys",
 			'__return_null'
 		);
 		add_submenu_page(
@@ -86,6 +86,14 @@ class Admin_Menu {
 			esc_html__( 'Modules', 'ai-copilot' ),
 			'manage_options',
 			"{$menu_slug}&tab=modules",
+			'__return_null'
+		);
+		add_submenu_page(
+			$menu_slug,
+			esc_html__( 'Actions', 'ai-copilot' ),
+			esc_html__( 'Actions', 'ai-copilot' ),
+			'manage_options',
+			"{$menu_slug}&tab=actions",
 			'__return_null'
 		);
 		add_submenu_page(
@@ -101,15 +109,7 @@ class Admin_Menu {
 			esc_html__( 'Chatbot', 'ai-copilot' ),
 			esc_html__( 'Chatbot', 'ai-copilot' ) . ' <span class="aicp__badge">Beta</span>',
 			'manage_options',
-			"{$menu_slug}&tab=chatbots",
-			'__return_null'
-		);
-		add_submenu_page(
-			$menu_slug,
-			esc_html__( 'Actions', 'ai-copilot' ),
-			esc_html__( 'Actions', 'ai-copilot' ),
-			'manage_options',
-			"{$menu_slug}&tab=actions",
+			"{$menu_slug}&tab=chatbot",
 			'__return_null'
 		);
 		add_submenu_page(

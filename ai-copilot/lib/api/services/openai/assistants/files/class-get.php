@@ -68,9 +68,7 @@ class Get extends Base {
 							} else {
 								$new_file_data                = reset( $new_file_data );
 								$new_file_data['file_origin'] = $old_file_data->get( 'file_origin' );
-								$new_file_data['file_label']  = $old_file_data->get( 'file_label' );
 								$new_file_data['file_status'] = $old_file_data->get( 'file_status' );
-
 							}
 
 							$new_file_data['file_status'] = isset( $new_file_data['file_status'] ) ? $new_file_data['file_status'] : 'ready';
@@ -135,8 +133,6 @@ class Get extends Base {
 						$old_file_data['openai_id'] = null;
 						$new_file_data              = $old_file_data;
 					}
-
-					$new_file_data['file_label']  = $old_file_data['file_label'];
 					$new_file_data['file_status'] = $old_file_data['file_status'];
 
 					Models_Assistants_Files::instance()->update( $file_id, $new_file_data );

@@ -42,7 +42,7 @@ class Post extends Base {
 				array(
 					'attachment_id'    => $attachment_id ?? -1,
 					'openai_id'        => $response['openai_id'] ?? '',
-					'file_label'       => $response['file_label'] ?? $file['file_label'],
+					'file_label'       => $response['file_label'] ?? '',
 					'file_origin'      => 'user',
 					'file_size_bytes'  => $response['file_size_bytes'] ?? 0,
 					'file_status'      => $attachment_id ? 'ready' : 'pending',
