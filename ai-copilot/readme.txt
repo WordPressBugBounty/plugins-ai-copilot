@@ -1,15 +1,15 @@
-=== AI Copilot - AI Chatbot & Automated Post Generation ===
+=== AI Copilot – ChatGPT Chatbot & AI Engine for Post Automation ===
 Contributors: quadlayers
 Donate link: https://quadlayers.com/portfolio/ai-copilot/
 Tags: ai, chatgpt, gpt, openai, chatbot
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 6.7
-Stable tag: 1.2.9
+Stable tag: 1.3.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Boost productivity with ChatGPT AI: automate content creation, enhance Gutenberg editing, and deploy AI chatbots for smarter, faster workflows.
+Boost productivity with ChatGPT AI Engine: automate content creation, enhance Gutenberg editing, and deploy AI chatbots for smarter, faster workflows.
 
 == Description ==
 
@@ -111,6 +111,9 @@ For transparency and legal compliance, review Pexels' policies:
 - Privacy Policy: [Pexels Privacy Policy](https://www.pexels.com/privacy-policy/)
 
 == Changelog ==
+
+= 1.3.0 =
+- fix: update readme
 
 = 1.2.9 =
 - fix: ui issues
