@@ -17,7 +17,7 @@ final class Plugin {
 		/**
 		 * Load plugin textdomain.
 		 */
-		load_plugin_textdomain( 'ai-copilot', false, QUADLAYERS_AICP_PLUGIN_DIR . '/languages/' );
+		add_action( 'init', array( $this, 'load_textdomain' ) );
 		/**
 		 * Add premium CSS
 		 */
@@ -114,6 +114,10 @@ final class Plugin {
 		}
 
 		do_action( 'quadlayers_aicp_init' );
+	}
+
+	public function load_textdomain() {
+		load_plugin_textdomain( 'ai-copilot', false, QUADLAYERS_AICP_PLUGIN_DIR . '/languages/' );
 	}
 
 	public static function add_premium_js() {

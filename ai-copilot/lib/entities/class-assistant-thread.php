@@ -4,8 +4,6 @@
 // phpcs:disable Squiz.Commenting.VariableComment.MissingVar
 namespace QuadLayers\AICP\Entities;
 
-use WC_Order;
-
 use Symlink\ORM\Models\BaseModel as Model;
 /**
  * @ORM_Type Entity
