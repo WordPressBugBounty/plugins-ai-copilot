@@ -53,7 +53,10 @@ class Get extends Base {
 													}
 												);
 												$assistant->set( 'assistant_vector_store_ids', $filtered_assistant_vector_store_ids );
-												Models_Assistants::instance()->update( $assistant->get( 'assistant_id' ), $assistant );
+
+												$data = $assistant->getProperties();
+
+												Models_Assistants::instance()->update( $assistant->get( 'assistant_id' ), $data );
 											}
 										}
 									}
