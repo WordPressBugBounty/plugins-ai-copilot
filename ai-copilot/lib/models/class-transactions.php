@@ -64,10 +64,15 @@ class Transactions {
 
 		$table_name = $this->get_table_name();
 
-		$order       = $order ?? 'ASC';
-		$order_by    = $order_by ?? 'ID';
+		// Sanitize inputs to prevent SQL injection
+		$order       = in_array( strtoupper( $order ), array( 'ASC', 'DESC' ), true ) ? $order : 'ASC';
+		$order_by    = in_array( $order_by, array( 'date', 'ID', 'tokens_qty_input', 'tokens_qty_output', 'tokens_qty_total', 'transaction_qty', 'transaction_cost_input', 'transaction_cost_output', 'transaction_cost_total' ), true ) ? $order_by : 'ID';
 		$where       = isset( $where ) ? $this->parse_where( $where ) : '';
 		$date_format = '';
+		
+		// Validate group_by
+		$group_by = in_array( $group_by, array( 'day', 'month', 'year' ), true ) ? $group_by : 'day';
+		
 		switch ( $group_by ) {
 			case 'day':
 				$date_format = "DATE_FORMAT(date, '%Y/%m/%d')";
@@ -79,7 +84,7 @@ class Transactions {
 				$date_format = "DATE_FORMAT(date, '%Y')";
 				break;
 			default:
-				$date_format = '';
+				$date_format = "DATE_FORMAT(date, '%Y/%m/%d')";
 				break;
 		}
 
@@ -87,7 +92,7 @@ class Transactions {
 
 		$query = "SELECT $date_format AS date, SUM(tokens_qty_input) AS tokens_qty_input, SUM(tokens_qty_output) AS tokens_qty_output, SUM(tokens_qty_total) AS tokens_qty_total, COUNT(*) AS transaction_qty, ROUND(SUM(transaction_cost_input),2) AS transaction_cost_input, ROUND(SUM(transaction_cost_output),2) AS transaction_cost_output, ROUND(SUM(transaction_cost_total),2) AS transaction_cost_total FROM $table_name $where GROUP BY $date_format ORDER BY $order_by $order;";
 
-		$results = $wpdb->get_results( $query ); // phpcs:ignore.WordPress.DB.PreparedSQL.NotPrepared
+		$results = $wpdb->get_results( $query ); // phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared -- Values are sanitized before being used
 
 		return $results;
 	}
@@ -128,6 +133,7 @@ class Transactions {
 	 * @return string
 	 */
 	public function parse_where( $where_array ): string {
+		global $wpdb;
 		$where_query = '';
 		if ( 0 === count( $where_array ) ) {
 			return $where_query;
@@ -136,8 +142,19 @@ class Transactions {
 
 		$total_conditions = count( $where_array );
 		for ( $i = 0; $i < $total_conditions; $i++ ) {
-			$value        = $where_array[ $i ];
-			$where_query .= "$value[0] $value[2] '$value[1]'";
+			$value = $where_array[ $i ];
+			
+			// Sanitize column name (only allow alphanumeric and underscore)
+			$column_name = preg_replace('/[^a-zA-Z0-9_]/', '', $value[0]);
+			
+			// Sanitize operator (only allow certain comparison operators)
+			$allowed_operators = array('=', '!=', '>', '<', '>=', '<=', 'LIKE', 'NOT LIKE', 'IN', 'NOT IN');
+			$operator = in_array($value[2], $allowed_operators, true) ? $value[2] : '=';
+			
+			// Use esc_sql for the value to prevent SQL injection
+			$value_escaped = esc_sql($value[1]);
+			
+			$where_query .= "$column_name $operator '$value_escaped'";
 
 			if ( $i < $total_conditions - 1 ) {
 				$where_query .= ' AND ';

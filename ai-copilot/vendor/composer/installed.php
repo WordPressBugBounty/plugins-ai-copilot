@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'quadlayers/ai-copilot',
-        'pretty_version' => 'v1.3.3',
-        'version' => '1.3.3.0',
-        'reference' => '21b838429ef618218e531dc16f223f2d160446c6',
+        'pretty_version' => 'v1.3.4',
+        'version' => '1.3.4.0',
+        'reference' => '3ff27fc2bbe1d0112e9433e5702c8d5634dc6198',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'automattic/jetpack-assets' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => 'aee006dc5dc3a533fb76bdfb290eeb2d4cb44b21',
+            'reference' => '829007df364be4ae5435d2973b2035597e35852f',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/automattic/jetpack-assets',
             'aliases' => array(
@@ -24,7 +24,7 @@
         'automattic/jetpack-composer-plugin' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => '5c4d023e6778ef287165318478faa9c2ab093ec9',
+            'reference' => 'e8a3a1c997f2dbc60f37b292384bc8c03ba3f52a',
             'type' => 'composer-plugin',
             'install_path' => __DIR__ . '/../automattic/jetpack-composer-plugin',
             'aliases' => array(
@@ -35,7 +35,7 @@
         'automattic/jetpack-constants' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => 'e2d48f5e5f03aae669a9abda3b569342d67f350f',
+            'reference' => '9a30a9563598c6276b0e070dad34009e93adc4e5',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/automattic/jetpack-constants',
             'aliases' => array(
@@ -66,14 +66,12 @@
             'dev_requirement' => false,
         ),
         'franmastromarino/wp-plugin-feedback' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
-            'reference' => '631d2f794cef3447b0f51a9916974b74ba4303c6',
+            'pretty_version' => 'dev-feat/QLD-189',
+            'version' => 'dev-feat/QLD-189',
+            'reference' => '3a0818db737c30c0cf4a2ee55811d294d8d2b8c5',
             'type' => 'project',
             'install_path' => __DIR__ . '/../franmastromarino/wp-plugin-feedback',
-            'aliases' => array(
-                0 => '9999999-dev',
-            ),
+            'aliases' => array(),
             'dev_requirement' => false,
         ),
         'minime/annotations' => array(
@@ -119,9 +117,9 @@
             ),
         ),
         'quadlayers/ai-copilot' => array(
-            'pretty_version' => 'v1.3.3',
-            'version' => '1.3.3.0',
-            'reference' => '21b838429ef618218e531dc16f223f2d160446c6',
+            'pretty_version' => 'v1.3.4',
+            'version' => '1.3.4.0',
+            'reference' => '3ff27fc2bbe1d0112e9433e5702c8d5634dc6198',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

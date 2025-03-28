@@ -10,6 +10,10 @@ if ( class_exists( 'QuadLayers\\WP_Plugin_Table_Links\\Load' ) ) {
 				'target' => '_self',
 			),
 			array(
+				'text' => esc_html__( 'Premium', 'ai-copilot' ),
+				'url'  => QUADLAYERS_AICP_PREMIUM_SELL_URL,
+			),
+			array(
 				'place' => 'row_meta',
 				'text'  => esc_html__( 'Support', 'ai-copilot' ),
 				'url'   => QUADLAYERS_AICP_SUPPORT_URL,
