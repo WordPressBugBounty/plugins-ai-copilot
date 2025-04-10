@@ -4,8 +4,8 @@ Donate link: https://quadlayers.com/portfolio/ai-copilot/
 Tags: ai, chatgpt, gpt, openai, chatbot
 Requires at least: 4.7
 Requires PHP: 5.6
-Tested up to: 6.7
-Stable tag: 1.3.4
+Tested up to: 6.8
+Stable tag: 1.3.5
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -111,6 +111,9 @@ For transparency and legal compliance, review Pexels' policies:
 - Privacy Policy: [Pexels Privacy Policy](https://www.pexels.com/privacy-policy/)
 
 == Changelog ==
+
+= 1.3.5 =
+- fix: WordPress compatibility
 
 = 1.3.4 =
 - feat: implement highchart stats graph

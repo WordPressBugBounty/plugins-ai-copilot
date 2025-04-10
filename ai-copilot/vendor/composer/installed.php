@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'quadlayers/ai-copilot',
-        'pretty_version' => 'v1.3.4',
-        'version' => '1.3.4.0',
-        'reference' => '3ff27fc2bbe1d0112e9433e5702c8d5634dc6198',
+        'pretty_version' => 'v1.3.5',
+        'version' => '1.3.5.0',
+        'reference' => 'abf0a6ff40b7f6ed16616ec2686e3f66e1649539',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'automattic/jetpack-assets' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => '829007df364be4ae5435d2973b2035597e35852f',
+            'reference' => 'cf70a8b2698b771b9f7847a71573da3652a69291',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/automattic/jetpack-assets',
             'aliases' => array(
@@ -24,7 +24,7 @@
         'automattic/jetpack-composer-plugin' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => 'e8a3a1c997f2dbc60f37b292384bc8c03ba3f52a',
+            'reference' => '37bbd79b5bf9b1cccc77d9b6fb19b0a12d071e49',
             'type' => 'composer-plugin',
             'install_path' => __DIR__ . '/../automattic/jetpack-composer-plugin',
             'aliases' => array(
@@ -35,7 +35,7 @@
         'automattic/jetpack-constants' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => '9a30a9563598c6276b0e070dad34009e93adc4e5',
+            'reference' => 'defc1826f4be2e240ac513e868038f60aa63f62e',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/automattic/jetpack-constants',
             'aliases' => array(
@@ -117,9 +117,9 @@
             ),
         ),
         'quadlayers/ai-copilot' => array(
-            'pretty_version' => 'v1.3.4',
-            'version' => '1.3.4.0',
-            'reference' => '3ff27fc2bbe1d0112e9433e5702c8d5634dc6198',
+            'pretty_version' => 'v1.3.5',
+            'version' => '1.3.5.0',
+            'reference' => 'abf0a6ff40b7f6ed16616ec2686e3f66e1649539',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
