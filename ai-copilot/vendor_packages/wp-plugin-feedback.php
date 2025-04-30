@@ -1,5 +1,10 @@
 <?php
 
 if ( class_exists( 'QuadLayers\\PluginFeedback\\Load' ) ) {
-	\QuadLayers\PluginFeedback\Load::instance()->add(QUADLAYERS_AICP_PLUGIN_FILE);
+	\QuadLayers\PluginFeedback\Load::instance()->add(
+		QUADLAYERS_AICP_PLUGIN_FILE,
+		array(
+			'support_link' => QUADLAYERS_AICP_SUPPORT_URL,
+		)
+	);
 }

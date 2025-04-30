@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit067f455dea6452abec06e0a5849fa633
+class ComposerStaticInitccd73a1b902fd24b09552b6b467ab1fe
 {
     public static $files = array (
         'fe1bcd0336136e435eaf197895daf81a' => __DIR__ . '/..' . '/nikic/php-parser/lib/bootstrap.php',
@@ -90,6 +90,15 @@ class ComposerStaticInit067f455dea6452abec06e0a5849fa633
         'Automattic\\Jetpack\\Composer\\Manager' => __DIR__ . '/..' . '/automattic/jetpack-composer-plugin/src/class-manager.php',
         'Automattic\\Jetpack\\Composer\\Plugin' => __DIR__ . '/..' . '/automattic/jetpack-composer-plugin/src/class-plugin.php',
         'Automattic\\Jetpack\\Constants' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-constants/src/class-constants.php',
+        'Automattic\\Jetpack\\CookieState' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-status/src/class-cookiestate.php',
+        'Automattic\\Jetpack\\Errors' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-status/src/class-errors.php',
+        'Automattic\\Jetpack\\Files' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-status/src/class-files.php',
+        'Automattic\\Jetpack\\Modules' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-status/src/class-modules.php',
+        'Automattic\\Jetpack\\Paths' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-status/src/class-paths.php',
+        'Automattic\\Jetpack\\Status' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-status/src/class-status.php',
+        'Automattic\\Jetpack\\Status\\Cache' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-status/src/class-cache.php',
+        'Automattic\\Jetpack\\Status\\Host' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-status/src/class-host.php',
+        'Automattic\\Jetpack\\Status\\Visitor' => __DIR__ . '/../..' . '/jetpack_vendor/automattic/jetpack-status/src/class-visitor.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Minime\\Annotations\\AnnotationsBag' => __DIR__ . '/..' . '/minime/annotations/src/AnnotationsBag.php',
         'Minime\\Annotations\\Cache\\ApcCache' => __DIR__ . '/..' . '/minime/annotations/src/Cache/ApcCache.php',
@@ -449,9 +458,9 @@ class ComposerStaticInit067f455dea6452abec06e0a5849fa633
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit067f455dea6452abec06e0a5849fa633::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit067f455dea6452abec06e0a5849fa633::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit067f455dea6452abec06e0a5849fa633::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitccd73a1b902fd24b09552b6b467ab1fe::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitccd73a1b902fd24b09552b6b467ab1fe::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitccd73a1b902fd24b09552b6b467ab1fe::$classMap;
 
         }, null, ClassLoader::class);
     }

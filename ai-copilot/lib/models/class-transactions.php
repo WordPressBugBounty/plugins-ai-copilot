@@ -69,10 +69,10 @@ class Transactions {
 		$order_by    = in_array( $order_by, array( 'date', 'ID', 'tokens_qty_input', 'tokens_qty_output', 'tokens_qty_total', 'transaction_qty', 'transaction_cost_input', 'transaction_cost_output', 'transaction_cost_total' ), true ) ? $order_by : 'ID';
 		$where       = isset( $where ) ? $this->parse_where( $where ) : '';
 		$date_format = '';
-		
+
 		// Validate group_by
 		$group_by = in_array( $group_by, array( 'day', 'month', 'year' ), true ) ? $group_by : 'day';
-		
+
 		switch ( $group_by ) {
 			case 'day':
 				$date_format = "DATE_FORMAT(date, '%Y/%m/%d')";
@@ -143,17 +143,17 @@ class Transactions {
 		$total_conditions = count( $where_array );
 		for ( $i = 0; $i < $total_conditions; $i++ ) {
 			$value = $where_array[ $i ];
-			
+
 			// Sanitize column name (only allow alphanumeric and underscore)
-			$column_name = preg_replace('/[^a-zA-Z0-9_]/', '', $value[0]);
-			
+			$column_name = preg_replace( '/[^a-zA-Z0-9_]/', '', $value[0] );
+
 			// Sanitize operator (only allow certain comparison operators)
-			$allowed_operators = array('=', '!=', '>', '<', '>=', '<=', 'LIKE', 'NOT LIKE', 'IN', 'NOT IN');
-			$operator = in_array($value[2], $allowed_operators, true) ? $value[2] : '=';
-			
+			$allowed_operators = array( '=', '!=', '>', '<', '>=', '<=', 'LIKE', 'NOT LIKE', 'IN', 'NOT IN' );
+			$operator          = in_array( $value[2], $allowed_operators, true ) ? $value[2] : '=';
+
 			// Use esc_sql for the value to prevent SQL injection
-			$value_escaped = esc_sql($value[1]);
-			
+			$value_escaped = esc_sql( $value[1] );
+
 			$where_query .= "$column_name $operator '$value_escaped'";
 
 			if ( $i < $total_conditions - 1 ) {
