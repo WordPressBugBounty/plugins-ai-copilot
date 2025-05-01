@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'quadlayers/ai-copilot',
-        'pretty_version' => 'v1.3.7',
-        'version' => '1.3.7.0',
-        'reference' => '51c33b4105f602f024e2e322c7ab7db1a97f45c2',
+        'pretty_version' => 'v1.3.8',
+        'version' => '1.3.8.0',
+        'reference' => 'fa6646973fff139939a27d8168828f1983bbd6cc',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'automattic/jetpack-assets' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => '6465b7a410221f68a553e0feabab0b2e0865315e',
+            'reference' => '317bfcf3b79c1941633ee293473fb815ea15b662',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/automattic/jetpack-assets',
             'aliases' => array(
@@ -79,7 +79,7 @@
         'franmastromarino/wp-plugin-feedback' => array(
             'pretty_version' => 'dev-feat/QLD-189-2',
             'version' => 'dev-feat/QLD-189-2',
-            'reference' => '5601235c34dd416a9f80176f05bb7247e994237c',
+            'reference' => 'fe3fa014a99f70efdf5c51d2b62d8701f72b4df5',
             'type' => 'project',
             'install_path' => __DIR__ . '/../franmastromarino/wp-plugin-feedback',
             'aliases' => array(),
@@ -128,9 +128,9 @@
             ),
         ),
         'quadlayers/ai-copilot' => array(
-            'pretty_version' => 'v1.3.7',
-            'version' => '1.3.7.0',
-            'reference' => '51c33b4105f602f024e2e322c7ab7db1a97f45c2',
+            'pretty_version' => 'v1.3.8',
+            'version' => '1.3.8.0',
+            'reference' => 'fa6646973fff139939a27d8168828f1983bbd6cc',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

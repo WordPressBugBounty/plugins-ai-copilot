@@ -5,7 +5,7 @@ Tags: ai, chatgpt, gpt, openai, chatbot
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 6.8
-Stable tag: 1.3.7
+Stable tag: 1.3.8
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -18,6 +18,8 @@ Boost productivity with ChatGPT AI Engine: automate content creation, enhance Gu
 We're proud to introduce AI Copilot. We built this not just as another WordPress plugin, but as a tool we wished existed when we were writing and managing content. Whether you're an individual blogger, run an e-commerce site, or simply someone exploring content creation, AI Copilot has been crafted to help you every step of the way.
 
 Our AI Engine equips you with a suite of tools to craft exceptional content, engage users dynamically, and achieve SEO excellence.
+
+[youtube https://www.youtube.com/watch?v=OAtd98jC38U]
 
 == Features ==
 - **AI Chatbot **: Interactive chatbot that works with your site's content and knowledge base.
@@ -111,6 +113,9 @@ For transparency and legal compliance, review Pexels' policies:
 - Privacy Policy: [Pexels Privacy Policy](https://www.pexels.com/privacy-policy/)
 
 == Changelog ==
+
+= 1.3.8 =
+- fix: update dependencies
 
 = 1.3.7 =
 - fix: update dependencies
