@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'quadlayers/ai-copilot',
-        'pretty_version' => 'v1.3.8',
-        'version' => '1.3.8.0',
-        'reference' => 'fa6646973fff139939a27d8168828f1983bbd6cc',
+        'pretty_version' => 'v1.3.9',
+        'version' => '1.3.9.0',
+        'reference' => '61bc46c28a37bd16eb2dba35c3519524dd445ed7',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -77,12 +77,14 @@
             'dev_requirement' => false,
         ),
         'franmastromarino/wp-plugin-feedback' => array(
-            'pretty_version' => 'dev-feat/QLD-189-2',
-            'version' => 'dev-feat/QLD-189-2',
-            'reference' => 'fe3fa014a99f70efdf5c51d2b62d8701f72b4df5',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'a9d74330be65452c106dde40e7f940134af45909',
             'type' => 'project',
             'install_path' => __DIR__ . '/../franmastromarino/wp-plugin-feedback',
-            'aliases' => array(),
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
             'dev_requirement' => false,
         ),
         'minime/annotations' => array(
@@ -128,9 +130,9 @@
             ),
         ),
         'quadlayers/ai-copilot' => array(
-            'pretty_version' => 'v1.3.8',
-            'version' => '1.3.8.0',
-            'reference' => 'fa6646973fff139939a27d8168828f1983bbd6cc',
+            'pretty_version' => 'v1.3.9',
+            'version' => '1.3.9.0',
+            'reference' => '61bc46c28a37bd16eb2dba35c3519524dd445ed7',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -161,7 +163,7 @@
         'quadlayers/wp-plugin-table-links' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'cadb59de7ce90b0e3b59174bfb7f52af556c7a66',
+            'reference' => '22bd6b20b40c7878c966eb57f45b1d9046728d6b',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/quadlayers/wp-plugin-table-links',
             'aliases' => array(

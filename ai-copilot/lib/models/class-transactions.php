@@ -6,6 +6,8 @@ use Symlink\ORM\Manager;
 use Symlink\ORM\Mapping;
 use QuadLayers\AICP\Entities\Transaction as Transaction_Entity;
 
+use function cli\err;
+
 /**
  * Models_Stat Class
  */
@@ -64,35 +66,46 @@ class Transactions {
 
 		$table_name = $this->get_table_name();
 
-		// Sanitize inputs to prevent SQL injection
-		$order       = in_array( strtoupper( $order ), array( 'ASC', 'DESC' ), true ) ? $order : 'ASC';
-		$order_by    = in_array( $order_by, array( 'date', 'ID', 'tokens_qty_input', 'tokens_qty_output', 'tokens_qty_total', 'transaction_qty', 'transaction_cost_input', 'transaction_cost_output', 'transaction_cost_total' ), true ) ? $order_by : 'ID';
-		$where       = isset( $where ) ? $this->parse_where( $where ) : '';
-		$date_format = '';
+		// Sanitize inputs to prevent SQL injection.
+		$order             = in_array( strtoupper( $order ), array( 'ASC', 'DESC' ), true ) ? $order : 'ASC';
+		$order_by          = in_array( $order_by, array( 'date', 'ID', 'tokens_qty_input', 'tokens_qty_output', 'tokens_qty_total', 'transaction_qty', 'transaction_cost_input', 'transaction_cost_output', 'transaction_cost_total' ), true ) ? $order_by : 'ID';
+		$where             = isset( $where ) ? $this->parse_where( $where ) : '';
+		$date_format_sql   = '';
+		$date_format_mysql = '';
 
-		// Validate group_by
+		// Validate group_by.
 		$group_by = in_array( $group_by, array( 'day', 'month', 'year' ), true ) ? $group_by : 'day';
 
 		switch ( $group_by ) {
 			case 'day':
-				$date_format = "DATE_FORMAT(date, '%Y/%m/%d')";
+				$date_format_mysql = '%Y/%m/%d';
 				break;
 			case 'month':
-				$date_format = "DATE_FORMAT(date, '%Y/%m')";
+				$date_format_mysql = '%Y/%m';
 				break;
 			case 'year':
-				$date_format = "DATE_FORMAT(date, '%Y')";
+				$date_format_mysql = '%Y';
 				break;
 			default:
-				$date_format = "DATE_FORMAT(date, '%Y/%m/%d')";
+				$date_format_mysql = '%Y/%m/%d';
 				break;
 		}
 
-		$group_by = "GROUP BY $group_by";
+		$date_format_sql = "DATE_FORMAT(date, '" . $date_format_mysql . "')";
 
-		$query = "SELECT $date_format AS date, SUM(tokens_qty_input) AS tokens_qty_input, SUM(tokens_qty_output) AS tokens_qty_output, SUM(tokens_qty_total) AS tokens_qty_total, COUNT(*) AS transaction_qty, ROUND(SUM(transaction_cost_input),2) AS transaction_cost_input, ROUND(SUM(transaction_cost_output),2) AS transaction_cost_output, ROUND(SUM(transaction_cost_total),2) AS transaction_cost_total FROM $table_name $where GROUP BY $date_format ORDER BY $order_by $order;";
+		$sql = "SELECT $date_format_sql AS date, 
+			SUM(tokens_qty_input) AS tokens_qty_input, 
+			SUM(tokens_qty_output) AS tokens_qty_output, 
+			SUM(tokens_qty_total) AS tokens_qty_total, 
+			COUNT(*) AS transaction_qty, 
+			ROUND(SUM(transaction_cost_input),2) AS transaction_cost_input, 
+			ROUND(SUM(transaction_cost_output),2) AS transaction_cost_output, 
+			ROUND(SUM(transaction_cost_total),2) AS transaction_cost_total 
+			FROM $table_name $where
+			GROUP BY $date_format_sql 
+			ORDER BY $order_by $order";
 
-		$results = $wpdb->get_results( $query ); // phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared -- Values are sanitized before being used
+		$results = $wpdb->get_results( $sql );
 
 		return $results;
 	}
@@ -133,7 +146,6 @@ class Transactions {
 	 * @return string
 	 */
 	public function parse_where( $where_array ): string {
-		global $wpdb;
 		$where_query = '';
 		if ( 0 === count( $where_array ) ) {
 			return $where_query;
