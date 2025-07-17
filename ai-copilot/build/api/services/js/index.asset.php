@@ -1,1 +1,1 @@
-<?php return array('dependencies' => array('aicp-api-transactions', 'aicp-helpers', 'lodash', 'wp-api-fetch', 'wp-components', 'wp-data', 'wp-element', 'wp-i18n', 'wp-media-utils', 'wp-notices'), 'version' => 'b7ac57c3a56146ec008b');
+<?php return array('dependencies' => array('aicp-api-transactions', 'aicp-helpers', 'lodash', 'wp-api-fetch', 'wp-components', 'wp-data', 'wp-element', 'wp-i18n', 'wp-media-utils', 'wp-notices'), 'version' => '5a20a2c347940aeeab38');
