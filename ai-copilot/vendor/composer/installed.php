@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'quadlayers/ai-copilot',
-        'pretty_version' => 'v1.4.0',
-        'version' => '1.4.0.0',
-        'reference' => 'f0a98e337219dad2ad5fd7dbe5cafe60158e23de',
+        'pretty_version' => 'v1.4.1',
+        'version' => '1.4.1.0',
+        'reference' => '221fad60bd8ea14841d7e6e448bfa3678acfefd1',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,11 +13,11 @@
         'automattic/jetpack-assets' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => 'ddb583eb91eb964776920902c54601043be4b4c4',
+            'reference' => '93c9235f9ffbb9aad852c0338894298c22e01c80',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/automattic/jetpack-assets',
             'aliases' => array(
-                0 => '4.2.x-dev',
+                0 => '4.3.x-dev',
             ),
             'dev_requirement' => false,
         ),
@@ -46,11 +46,11 @@
         'automattic/jetpack-status' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => 'ac5a5b67dac796bcb48323ad0baaa292fe0af7d4',
+            'reference' => '3873652648ce3e4e137ee6bb7d1da6638385a3e5',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/automattic/jetpack-status',
             'aliases' => array(
-                0 => '5.4.x-dev',
+                0 => '6.0.x-dev',
             ),
             'dev_requirement' => false,
         ),
@@ -68,7 +68,7 @@
         'franmastromarino/wp-orm' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'dfec8095b65a507e19ff377d976c596ba13e4f27',
+            'reference' => '9adc495228f2e8a761e0e1cee724423570821310',
             'type' => 'library',
             'install_path' => __DIR__ . '/../franmastromarino/wp-orm',
             'aliases' => array(
@@ -130,9 +130,9 @@
             ),
         ),
         'quadlayers/ai-copilot' => array(
-            'pretty_version' => 'v1.4.0',
-            'version' => '1.4.0.0',
-            'reference' => 'f0a98e337219dad2ad5fd7dbe5cafe60158e23de',
+            'pretty_version' => 'v1.4.1',
+            'version' => '1.4.1.0',
+            'reference' => '221fad60bd8ea14841d7e6e448bfa3678acfefd1',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -7,17 +7,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Automattic/jetpack-assets.git",
-                "reference": "ddb583eb91eb964776920902c54601043be4b4c4"
+                "reference": "93c9235f9ffbb9aad852c0338894298c22e01c80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-assets/zipball/ddb583eb91eb964776920902c54601043be4b4c4",
-                "reference": "ddb583eb91eb964776920902c54601043be4b4c4",
+                "url": "https://api.github.com/repos/Automattic/jetpack-assets/zipball/93c9235f9ffbb9aad852c0338894298c22e01c80",
+                "reference": "93c9235f9ffbb9aad852c0338894298c22e01c80",
                 "shasum": ""
             },
             "require": {
                 "automattic/jetpack-constants": "^3.0.8",
-                "automattic/jetpack-status": "^5.4.1-alpha",
+                "automattic/jetpack-status": "^6.0.0",
                 "php": ">=7.2"
             },
             "require-dev": {
@@ -30,7 +30,7 @@
             "suggest": {
                 "automattic/jetpack-autoloader": "Allow for better interoperability with other plugins that use this package."
             },
-            "time": "2025-07-16T14:23:08+00:00",
+            "time": "2025-07-28T16:54:32+00:00",
             "default-branch": true,
             "type": "jetpack-library",
             "extra": {
@@ -38,7 +38,7 @@
                 "textdomain": "jetpack-assets",
                 "mirror-repo": "Automattic/jetpack-assets",
                 "branch-alias": {
-                    "dev-trunk": "4.2.x-dev"
+                    "dev-trunk": "4.3.x-dev"
                 },
                 "changelogger": {
                     "link-template": "https://github.com/Automattic/jetpack-assets/compare/v${old}...v${new}"
@@ -188,12 +188,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Automattic/jetpack-status.git",
-                "reference": "ac5a5b67dac796bcb48323ad0baaa292fe0af7d4"
+                "reference": "3873652648ce3e4e137ee6bb7d1da6638385a3e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/jetpack-status/zipball/ac5a5b67dac796bcb48323ad0baaa292fe0af7d4",
-                "reference": "ac5a5b67dac796bcb48323ad0baaa292fe0af7d4",
+                "url": "https://api.github.com/repos/Automattic/jetpack-status/zipball/3873652648ce3e4e137ee6bb7d1da6638385a3e5",
+                "reference": "3873652648ce3e4e137ee6bb7d1da6638385a3e5",
                 "shasum": ""
             },
             "require": {
@@ -212,14 +212,14 @@
             "suggest": {
                 "automattic/jetpack-autoloader": "Allow for better interoperability with other plugins that use this package."
             },
-            "time": "2025-07-16T14:22:56+00:00",
+            "time": "2025-07-28T16:54:18+00:00",
             "default-branch": true,
             "type": "jetpack-library",
             "extra": {
                 "autotagger": true,
                 "mirror-repo": "Automattic/jetpack-status",
                 "branch-alias": {
-                    "dev-trunk": "5.4.x-dev"
+                    "dev-trunk": "6.0.x-dev"
                 },
                 "changelogger": {
                     "link-template": "https://github.com/Automattic/jetpack-status/compare/v${old}...v${new}"
@@ -308,12 +308,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/franmastromarino/wp-options-orm.git",
-                "reference": "dfec8095b65a507e19ff377d976c596ba13e4f27"
+                "reference": "9adc495228f2e8a761e0e1cee724423570821310"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/franmastromarino/wp-options-orm/zipball/dfec8095b65a507e19ff377d976c596ba13e4f27",
-                "reference": "dfec8095b65a507e19ff377d976c596ba13e4f27",
+                "url": "https://api.github.com/repos/franmastromarino/wp-options-orm/zipball/9adc495228f2e8a761e0e1cee724423570821310",
+                "reference": "9adc495228f2e8a761e0e1cee724423570821310",
                 "shasum": ""
             },
             "require": {
@@ -330,7 +330,7 @@
                 "squizlabs/php_codesniffer": "*",
                 "wp-coding-standards/wpcs": "^2.3.0"
             },
-            "time": "2024-09-18T14:23:52+00:00",
+            "time": "2025-07-23T09:44:58+00:00",
             "default-branch": true,
             "type": "library",
             "installation-source": "dist",
@@ -360,7 +360,7 @@
             ],
             "support": {
                 "issues": "https://github.com/franmastromarino/wp-options-orm/issues",
-                "source": "https://github.com/franmastromarino/wp-options-orm/tree/dev1.2.0"
+                "source": "https://github.com/franmastromarino/wp-options-orm/tree/main"
             },
             "install-path": "../franmastromarino/wp-orm"
         },
