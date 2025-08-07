@@ -53,8 +53,8 @@ class Chatbot extends SingleEntity {
 
 	public function __construct() {
 		$this->chatbot_button_text         = esc_html__( 'Hi! How can I help you?', 'ai-copilot' );
-		$this->chatbot_header_text         = '<p><span style="display:block;font-size: 10px;line-height: 10px;vertical-align: bottom;letter-spacing: -0.2px;">Powered by</span><a style="font-size: 24px;line-height: 34px;font-weight: bold;text-decoration: none;color: white" href="' . QUADLAYERS_AICP_DEMO_URL . '" target="_blank">' . QUADLAYERS_AICP_PLUGIN_NAME . '</a></p>';
-		$this->chatbot_footer_text         = '<p style="text-align: start;">' . QUADLAYERS_AICP_PLUGIN_NAME . ' is free, download and try it now <a target="_blank" href="' . QUADLAYERS_AICP_DEMO_URL . '">here!</a></p>';
+		$this->chatbot_header_text         = '<p><span style="display:block;font-size: 10px;line-height: 10px;vertical-align: bottom;letter-spacing: -0.2px;">Powered by</span><a style="font-size: 24px;line-height: 34px;font-weight: bold;text-decoration: none;color: white" href="https://quadlayers.com/products/ai-copilot/?utm_source=aicp_plugin&utm_medium=chatbot&utm_campaign=premium_upgrade&utm_content=header_logo" target="_blank">' . QUADLAYERS_AICP_PLUGIN_NAME . '</a></p>';
+		$this->chatbot_footer_text         = '<p style="text-align: start;">' . QUADLAYERS_AICP_PLUGIN_NAME . ' is free, download and try it now <a target="_blank" href="https://quadlayers.com/products/ai-copilot/?utm_source=aicp_plugin&utm_medium=chatbot&utm_campaign=demo&utm_content=demo_link">here!</a></p>';
 		$this->chatbot_message_placeholder = esc_html__( 'Enter your message...', 'ai-copilot' );
 		$this->visibility                  = Service_Visibility_Options::instance()->get_args();
 	}

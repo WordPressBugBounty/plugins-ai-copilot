@@ -3,7 +3,7 @@
  * Plugin Name:             AI Copilot
  * Plugin URI:              https://quadlayers.com/products/ai-copilot/
  * Description:             Boost your productivity with AI-driven tools, automated content generation, and enhanced editor utilities.
- * Version:                 1.4.1
+ * Version:                 1.4.2
  * Text Domain:             ai-copilot
  * Author:                  QuadLayers
  * Author URI:              https://quadlayers.com
@@ -19,19 +19,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 define( 'QUADLAYERS_AICP_PLUGIN_NAME', 'AI Copilot' );
-define( 'QUADLAYERS_AICP_PLUGIN_VERSION', '1.4.1' );
+define( 'QUADLAYERS_AICP_PLUGIN_VERSION', '1.4.2' );
 define( 'QUADLAYERS_AICP_PRO_MIN_PLUGIN_VERSION', '1.2.0' );
 define( 'QUADLAYERS_AICP_PLUGIN_FILE', __FILE__ );
 define( 'QUADLAYERS_AICP_PLUGIN_DIR', __DIR__ . DIRECTORY_SEPARATOR );
 define( 'QUADLAYERS_AICP_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 define( 'QUADLAYERS_AICP_WORDPRESS_URL', 'https://wordpress.org/plugins/ai-copilot/' );
 define( 'QUADLAYERS_AICP_REVIEW_URL', 'https://wordpress.org/support/plugin/ai-copilot/reviews/?filter=5#new-post' );
-define( 'QUADLAYERS_AICP_DEMO_URL', 'https://quadlayers.com/products/ai-copilot/?utm_source=aicp_admin' );
-define( 'QUADLAYERS_AICP_DOCUMENTATION_URL', 'https://quadlayers.com/documentation/ai-copilot/?utm_source=aicp_admin' );
-define( 'QUADLAYERS_AICP_SUPPORT_URL', 'https://wordpress.org/support/plugin/ai-copilot/' );
-define( 'QUADLAYERS_AICP_GROUP_URL', 'https://www.facebook.com/groups/quadlayers' );
-define( 'QUADLAYERS_AICP_PREMIUM_SELL_URL', 'https://quadlayers.com/products/ai-copilot/?utm_source=aicp_admin' );
-define( 'QUADLAYERS_AICP_DEVELOPER', false );
 /**
  * Load composer autoload
  */
