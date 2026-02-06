@@ -22,7 +22,7 @@ final class Plugin {
 		 * Add premium CSS
 		 */
 		add_action( 'admin_head', array( __CLASS__, 'add_premium_js' ) );
-		add_action( 'admin_footer', array( __CLASS__, 'add_premium_css' ) );
+		add_action( 'admin_footer', array( __CLASS__, 'add_premium_style' ) );
 
 		Setup::instance();
 
@@ -110,9 +110,7 @@ final class Plugin {
 				<?php
 				}
 			);
-			return;
 		}
-
 		do_action( 'quadlayers_aicp_init' );
 	}
 
@@ -128,7 +126,7 @@ final class Plugin {
 		<?php
 	}
 
-	public static function add_premium_css() {
+	public static function add_premium_style() {
 		?>
 			<style>
 				.aicp__premium-field {

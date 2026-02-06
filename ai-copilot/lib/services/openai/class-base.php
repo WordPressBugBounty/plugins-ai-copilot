@@ -38,6 +38,65 @@ abstract class Base implements Services_Interface {
 	}
 
 	/**
+	 * Check if model requires max_completion_tokens instead of max_tokens
+	 * GPT-5 models and O-series models use max_completion_tokens
+	 *
+	 * @param string $model The model name.
+	 * @return bool
+	 */
+	protected function requires_max_completion_tokens( $model ) {
+		if ( empty( $model ) ) {
+			return false;
+		}
+
+		// Check if model belongs to GPT-5 family.
+		if ( strpos( $model, 'gpt-5' ) !== false ) {
+			return true;
+		}
+
+		// Check if model belongs to O-series (o3, o4-mini, etc.).
+		if ( preg_match( '/^o\d/', $model ) ) {
+			return true;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Prepare request body with correct token parameter
+	 * Intelligently handles max_tokens vs max_completion_tokens based on model requirements
+	 * Compatible with all models (pre-5.1 and 5.1+)
+	 *
+	 * @param array $args Request arguments.
+	 * @return array
+	 */
+	protected function prepare_request_body( $args ) {
+		if ( ! isset( $args['model'] ) ) {
+			return $args;
+		}
+
+		$requires_completion_tokens = $this->requires_max_completion_tokens( $args['model'] );
+
+		// Get token value from whichever field has a valid value (> 0)
+		$token_value = null;
+		if ( isset( $args['max_tokens'] ) && $args['max_tokens'] > 0 ) {
+			$token_value = $args['max_tokens'];
+		} elseif ( isset( $args['max_completion_tokens'] ) && $args['max_completion_tokens'] > 0 ) {
+			$token_value = $args['max_completion_tokens'];
+		}
+
+		// Remove both fields first, then set the correct one
+		unset( $args['max_tokens'], $args['max_completion_tokens'] );
+
+		// Set token value in the correct field based on model requirements
+		if ( $token_value !== null ) {
+			$args[ $requires_completion_tokens ? 'max_completion_tokens' : 'max_tokens' ] = $token_value;
+		}
+
+		return $args;
+	}
+
+	/**
 	 * Function to query Open AI data.
 	 *
 	 * @param string $args Args to set query.
@@ -56,7 +115,7 @@ abstract class Base implements Services_Interface {
 
 		$api_key = $settings->get( 'openai_api_key' );
 
-		$body = $args;
+		$body = $this->prepare_request_body( $args );
 
 		$headers = array(
 			'Content-Type'  => 'application/json',
