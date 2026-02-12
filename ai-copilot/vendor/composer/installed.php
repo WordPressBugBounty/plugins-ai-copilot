@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'quadlayers/ai-copilot',
-        'pretty_version' => 'v1.4.8',
-        'version' => '1.4.8.0',
-        'reference' => '072f9c5ee0d12ccee19dae2ae0084cc57f6a23a3',
+        'pretty_version' => 'v1.4.9',
+        'version' => '1.4.9.0',
+        'reference' => '448eebba8026f076fbad1173ceea662fd358ef49',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'automattic/jetpack-assets' => array(
-            'pretty_version' => 'v4.3.22',
-            'version' => '4.3.22.0',
-            'reference' => 'a8e17dfcefa0001f39bf2eeb173414372a182bac',
+            'pretty_version' => 'v4.3.23',
+            'version' => '4.3.23.0',
+            'reference' => '04084672fab7ea7bedfb3d6ef2a8944e3268c3b7',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/automattic/jetpack-assets',
             'aliases' => array(),
@@ -96,9 +96,9 @@
             'dev_requirement' => false,
         ),
         'quadlayers/ai-copilot' => array(
-            'pretty_version' => 'v1.4.8',
-            'version' => '1.4.8.0',
-            'reference' => '072f9c5ee0d12ccee19dae2ae0084cc57f6a23a3',
+            'pretty_version' => 'v1.4.9',
+            'version' => '1.4.9.0',
+            'reference' => '448eebba8026f076fbad1173ceea662fd358ef49',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -5,9 +5,11 @@ Tags: ai, chatgpt, gpt, openai, chatbot
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 6.9
-Stable tag: 1.4.8
+Stable tag: 1.4.9
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
+WC requires at least: 4.0
+WC tested up to: 10.5
 
 Boost productivity with ChatGPT AI Engine: automate content creation, enhance Gutenberg editing, and deploy AI chatbots for smarter, faster workflows.
 
@@ -113,6 +115,9 @@ For transparency and legal compliance, review Pexels' policies:
 - Privacy Policy: [Pexels Privacy Policy](https://www.pexels.com/privacy-policy/)
 
 == Changelog ==
+
+= 1.4.9 =
+- fix: WooCommerce compatibility
 
 = 1.4.8 =
 - feat: add OpenAI models support
