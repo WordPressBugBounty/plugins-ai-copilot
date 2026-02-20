@@ -3,7 +3,7 @@
  * Plugin Name:             AI Copilot
  * Plugin URI:              https://quadlayers.com/products/ai-copilot/
  * Description:             Boost your productivity with AI-driven tools, automated content generation, and enhanced editor utilities.
- * Version:                 1.4.9
+ * Version:                 1.5.0
  * Text Domain:             ai-copilot
  * Author:                  QuadLayers
  * Author URI:              https://quadlayers.com
@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 define( 'QUADLAYERS_AICP_PLUGIN_NAME', 'AI Copilot' );
-define( 'QUADLAYERS_AICP_PLUGIN_VERSION', '1.4.9' );
+define( 'QUADLAYERS_AICP_PLUGIN_VERSION', '1.5.0' );
 define( 'QUADLAYERS_AICP_PRO_MIN_PLUGIN_VERSION', '1.2.0' );
 define( 'QUADLAYERS_AICP_PLUGIN_FILE', __FILE__ );
 define( 'QUADLAYERS_AICP_PLUGIN_DIR', __DIR__ . DIRECTORY_SEPARATOR );
@@ -50,5 +50,17 @@ register_activation_hook(
 	__FILE__,
 	function () {
 		do_action( 'quadlayers_aicp_activation' );
+	}
+);
+
+/**
+ * Declarate compatibility with WooCommerce Custom Order Tables
+ */
+add_action(
+	'before_woocommerce_init',
+	function () {
+		if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
+			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+		}
 	}
 );

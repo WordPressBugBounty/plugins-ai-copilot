@@ -5,7 +5,7 @@ Tags: ai, chatgpt, gpt, openai, chatbot
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 6.9
-Stable tag: 1.4.9
+Stable tag: 1.5.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 WC requires at least: 4.0
@@ -116,7 +116,7 @@ For transparency and legal compliance, review Pexels' policies:
 
 == Changelog ==
 
-= 1.4.9 =
+= 1.5.0 =
 - fix: WooCommerce compatibility
 
 = 1.4.8 =
