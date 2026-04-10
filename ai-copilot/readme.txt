@@ -5,7 +5,7 @@ Tags: ai, chatgpt, gpt, openai, chatbot
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 6.9
-Stable tag: 1.5.2
+Stable tag: 1.5.3
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 WC requires at least: 4.0
@@ -115,6 +115,9 @@ For transparency and legal compliance, review Pexels' policies:
 - Privacy Policy: [Pexels Privacy Policy](https://www.pexels.com/privacy-policy/)
 
 == Changelog ==
+
+= 1.5.3 =
+* Fix: textdomain php error
 
 = 1.5.2 =
 * fix: knowledge base "Uploading file, please wait." spinner never clearing after error
