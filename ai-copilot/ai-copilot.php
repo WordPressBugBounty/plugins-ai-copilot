@@ -3,14 +3,14 @@
  * Plugin Name:             AI Copilot
  * Plugin URI:              https://quadlayers.com/products/ai-copilot/
  * Description:             Boost your productivity with AI-driven tools, automated content generation, and enhanced editor utilities.
- * Version:                 1.5.5
+ * Version:                 1.5.6
  * Text Domain:             ai-copilot
  * Author:                  QuadLayers
  * Author URI:              https://quadlayers.com
  * License:                 GPLv3
  * Domain Path:             /languages
  * Request at least:        4.7
- * Tested up to:            6.9
+ * Tested up to:            7.0
  * Requires PHP:            5.6
  * WC requires at least:    4.0
  * WC tested up to:         10.7
