@@ -1,1 +1,1 @@
-<?php return array('dependencies' => array('aicp-helpers', 'wp-data', 'wp-i18n', 'wp-notices'), 'version' => '18fc2a00dbf7254855f5');
+<?php return array('dependencies' => array('aicp-helpers', 'wp-data', 'wp-i18n', 'wp-notices'), 'version' => '24a592f905266dfdb1b6');
