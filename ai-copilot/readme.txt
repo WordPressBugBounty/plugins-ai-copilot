@@ -4,12 +4,12 @@ Donate link: https://quadlayers.com/portfolio/ai-copilot/
 Tags: ai, chatgpt, gpt, openai, chatbot
 Requires at least: 4.7
 Requires PHP: 5.6
-Tested up to: 7.0
-Stable tag: 1.5.7
+Tested up to: 7.1
+Stable tag: 1.5.8
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 WC requires at least: 4.0
-WC tested up to: 10.9
+WC tested up to: 11.0
 
 Boost productivity with ChatGPT AI Engine: automate content creation, enhance Gutenberg editing, and deploy AI chatbots for smarter, faster workflows.
 
@@ -115,6 +115,9 @@ For transparency and legal compliance, review Pexels' policies:
 - Privacy Policy: [Pexels Privacy Policy](https://www.pexels.com/privacy-policy/)
 
 == Changelog ==
+
+= 1.5.8 =
+* fix: WooCommerce and WordPress compatibility
 
 = 1.5.7 =
 * fix: WooCommerce compatibility

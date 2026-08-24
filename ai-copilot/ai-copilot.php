@@ -3,17 +3,17 @@
  * Plugin Name:             AI Copilot
  * Plugin URI:              https://quadlayers.com/products/ai-copilot/
  * Description:             Boost your productivity with AI-driven tools, automated content generation, and enhanced editor utilities.
- * Version:                 1.5.7
+ * Version:                 1.5.8
  * Text Domain:             ai-copilot
  * Author:                  QuadLayers
  * Author URI:              https://quadlayers.com
  * License:                 GPLv3
  * Domain Path:             /languages
  * Request at least:        4.7
- * Tested up to:            7.0
+ * Tested up to:            7.1
  * Requires PHP:            5.6
  * WC requires at least:    4.0
- * WC tested up to:         10.9
+ * WC tested up to:         11.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 define( 'QUADLAYERS_AICP_PLUGIN_NAME', 'AI Copilot' );
-define( 'QUADLAYERS_AICP_PLUGIN_VERSION', '1.5.7' );
+define( 'QUADLAYERS_AICP_PLUGIN_VERSION', '1.5.8' );
 define( 'QUADLAYERS_AICP_PRO_MIN_PLUGIN_VERSION', '1.2.0' );
 define( 'QUADLAYERS_AICP_PLUGIN_FILE', __FILE__ );
 define( 'QUADLAYERS_AICP_PLUGIN_DIR', __DIR__ . DIRECTORY_SEPARATOR );

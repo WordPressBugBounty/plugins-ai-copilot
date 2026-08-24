@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'quadlayers/ai-copilot',
-        'pretty_version' => 'v1.5.7',
-        'version' => '1.5.7.0',
-        'reference' => 'eee62e789c5af52e478285368e22786d17b7d437',
+        'pretty_version' => 'v1.5.8',
+        'version' => '1.5.8.0',
+        'reference' => 'd397f0f156dce8be5f3e8d5b1571d5765c5b145a',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,18 +11,18 @@
     ),
     'versions' => array(
         'automattic/jetpack-assets' => array(
-            'pretty_version' => 'v4.4.2',
-            'version' => '4.4.2.0',
-            'reference' => '6b23241c5f76fdd5532533a86a90615b71ba11ef',
+            'pretty_version' => 'v4.4.11',
+            'version' => '4.4.11.0',
+            'reference' => '17b4b8db34db318c354a6539549ead32ac1a9279',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/automattic/jetpack-assets',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'automattic/jetpack-composer-plugin' => array(
-            'pretty_version' => 'v4.0.8',
-            'version' => '4.0.8.0',
-            'reference' => 'bfbfd3302d8620c38f49e03700fb4eb195fc286d',
+            'pretty_version' => 'v4.0.9',
+            'version' => '4.0.9.0',
+            'reference' => 'e7d0fd5bde13706f93089231803f939d3530798e',
             'type' => 'composer-plugin',
             'install_path' => __DIR__ . '/../automattic/jetpack-composer-plugin',
             'aliases' => array(),
@@ -38,9 +38,9 @@
             'dev_requirement' => false,
         ),
         'automattic/jetpack-status' => array(
-            'pretty_version' => 'v6.1.8',
-            'version' => '6.1.8.0',
-            'reference' => 'fe0bc0d426dd95386586556d94a360d3184b8a4a',
+            'pretty_version' => 'v6.4.0',
+            'version' => '6.4.0.0',
+            'reference' => '4aa75366a1e7fd074eff2cbe0e024062e662cfb3',
             'type' => 'jetpack-library',
             'install_path' => __DIR__ . '/../../jetpack_vendor/automattic/jetpack-status',
             'aliases' => array(),
@@ -49,7 +49,7 @@
         'deliciousbrains/wp-background-processing' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'bdc7d1147c48487d64364282053d84c7447fc258',
+            'reference' => '755c63d79d8aabb01bfc167ffb4972256a75c572',
             'type' => 'library',
             'install_path' => __DIR__ . '/../deliciousbrains/wp-background-processing',
             'aliases' => array(
@@ -96,9 +96,9 @@
             'dev_requirement' => false,
         ),
         'quadlayers/ai-copilot' => array(
-            'pretty_version' => 'v1.5.7',
-            'version' => '1.5.7.0',
-            'reference' => 'eee62e789c5af52e478285368e22786d17b7d437',
+            'pretty_version' => 'v1.5.8',
+            'version' => '1.5.8.0',
+            'reference' => 'd397f0f156dce8be5f3e8d5b1571d5765c5b145a',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
