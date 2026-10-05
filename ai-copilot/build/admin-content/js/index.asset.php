@@ -1,1 +1,1 @@
-<?php return array('dependencies' => array('aicp-api-services', 'aicp-components', 'aicp-helpers', 'aicp-hooks', 'aicp-icons', 'wp-block-editor', 'wp-blocks', 'wp-components', 'wp-data', 'wp-edit-post', 'wp-element', 'wp-i18n', 'wp-plugins'), 'version' => 'b74174ac13f437a0595f');
+<?php return array('dependencies' => array('aicp-api-services', 'aicp-components', 'aicp-helpers', 'aicp-hooks', 'aicp-icons', 'wp-block-editor', 'wp-blocks', 'wp-components', 'wp-data', 'wp-edit-post', 'wp-element', 'wp-i18n', 'wp-plugins'), 'version' => '7c0daf971521cf07f9e4');

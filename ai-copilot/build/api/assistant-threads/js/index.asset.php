@@ -1,1 +1,1 @@
-<?php return array('dependencies' => array('aicp-helpers'), 'version' => 'd7cc7e879f90e8f28c7a');
+<?php return array('dependencies' => array('aicp-helpers'), 'version' => '40ba3832164ab6518554');
